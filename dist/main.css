@@ -5870,31 +5870,149 @@ a.text-dark:focus, a.text-dark:hover {
 /* Colors */
 :root {
   --primaryColor: #f0b607;
-  --secondaryColor: #091052; }
+  --secondaryColor: #091052;
+  --extraLight: white;
+  --extraDark: black;
+  --disableColor: #adadad; }
 
 /* Var & Mixins */
 :root {
-  --fontSize: 10px; }
+  --fontSize: 10px;
+  --textFont: 'Exo 2', sans-serif;
+  --headerFont: 'Audiowide', cursive; }
+
+/* General class */
+.container-fluid {
+  max-width: 1920px; }
 
 /* General */
-html {
-  font-family: 'Exo 2', sans-serif;
+html, body {
+  font-family: var(--textFont);
   font-size: var(--fontSize); }
 
 h1,
 h2,
 h3 {
-  font-family: 'Audiowide', cursive; }
+  font-family: var(--headerFont); }
 
 h1 {
-  font-size: 11rem; }
+  font-size: 110px;
+  color: var(--primaryColor); }
 
 p {
   font-size: 1.6rem; }
 
+*:focus,
+html:focus,
+button:focus {
+  outline-color: var(--primaryColor); }
+
 /* Header */
 header {
-  background-image: url(e4f08bb85b0d1974a8e782ef367f68f4.png);
-  background-position: center; }
+  position: relative;
+  background-image: url(img/headerBg.jpg);
+  background-position: center top;
+  background-size: cover;
+  height: calc(100vh + 248px);
+  max-height: 750px; }
+  header::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 248px;
+    background-image: url(img/headerBgAfter.png);
+    background-size: cover; }
+
+.header__slog {
+  text-align: center;
+  margin-top: 110px; }
+  .header__slog h1, .header__slog h3 {
+    line-height: 1; }
+  .header__slog h1 {
+    margin: 0; }
+    .header__slog h1 img {
+      margin-top: -20px; }
+  .header__slog h3 {
+    color: var(--extraLight);
+    font-size: 40px;
+    letter-spacing: 7px;
+    margin-top: -10px; }
+  .header__slog p {
+    font-size: 23px;
+    color: var(--extraLight);
+    margin-top: 25px; }
+
+/* Navigation */
+.topBar__wrapper {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.36);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: rgba(0, 0, 0, 0.2); }
+  .topBar__wrapper .additional__controls button {
+    font-size: 1.6rem;
+    font-family: var(--headerFont);
+    color: var(--primaryColor);
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    border: 1px solid var(--extraLight);
+    padding: 1px 7px;
+    transition: all 0.3s linear; }
+    .topBar__wrapper .additional__controls button:hover {
+      color: var(--extraDark);
+      background-color: var(--extraLight); }
+  .topBar__wrapper .additional__controls .font__size {
+    margin-right: 20px; }
+    .topBar__wrapper .additional__controls .font__size .btn__increaseFontSize {
+      border-top-left-radius: 4px;
+      border-bottom-left-radius: 4px;
+      border-right: 0;
+      margin-right: -2px; }
+    .topBar__wrapper .additional__controls .font__size .btn__decreaseFontSize {
+      border-top-right-radius: 4px;
+      border-bottom-right-radius: 4px; }
+  .topBar__wrapper .additional__controls .language .langPL {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-right: 0;
+    margin-right: -3px; }
+  .topBar__wrapper .additional__controls .language .langENG {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px; }
+  .topBar__wrapper .additional__controls .language .active {
+    color: var(--extraDark);
+    background-color: var(--extraLight); }
+  .topBar__wrapper .additional__controls .language .disabled {
+    cursor: default; }
+    .topBar__wrapper .additional__controls .language .disabled:hover {
+      background-color: transparent;
+      color: var(--disableColor); }
+
+.nav__main__container .navbar-nav {
+  position: relative; }
+  .nav__main__container .navbar-nav .nav-link {
+    font-family: var(--headerFont);
+    font-size: 1.6rem;
+    color: var(--extraLight); }
+
+.nav__main__container .nav-item {
+  margin-right: 20px; }
+
+.nav__main__container .navbar-toggler {
+  color: var(--extraLight);
+  border-color: var(--extraLight); }
+
+.nav__main__container .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.9)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); }
+
+.nav__links_border {
+  position: absolute;
+  background-color: var(--primaryColor);
+  height: 3px;
+  width: 100px;
+  bottom: 100px;
+  border-radius: 2px;
+  transition: all 0.6s cubic-bezier(0.08, 1.53, 0.84, 0.94); }
 
 /*# sourceMappingURL=main.css.map*/
