@@ -1,0 +1,41 @@
+/* Colors */
+
+:root {
+	--primaryColor: #f0b607;
+	--secondaryColor: #091052;
+	--extraLight: white;
+	--extraDark: black;
+	--disableColor:rgb(173, 173, 173);
+}
+
+
+/* Var & Mixins */
+
+:root {
+	--fontSize: 10px;
+	--textFont: 'Exo 2',
+	sans-serif;
+	--headerFont: 'Audiowide',
+	cursive;
+}
+
+@mixin center {
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+@mixin trans($time, $timing, $var: null){
+	@if $var == null {
+		transition: all $time $timing;
+	}@else{
+		transition: $var $time $timing;
+	}
+
+}
+
+
+/* General class */
+.container-fluid{
+	max-width: 1920px;
+}
