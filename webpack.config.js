@@ -47,7 +47,10 @@ module.exports = function (env) {
 					test: /\.s[ca]ss$/,
 					use: ExtractTextWebpackPlugin.extract({
 						fallback: "style-loader",
-						use: "css-loader!sass-loader"
+						use: [
+							{loader: "css-loader", options: {sourceMap: true}},
+							{ loader: "sass-loader", options: { sourceMap: true }}
+						]
 					})
 				},
 

@@ -1,0 +1,18 @@
+@media (max-width:375px) {
+	.header {
+		&__slog {
+			h1 {
+				font-size: 45px;
+				img {
+					height: 40px;
+				}
+			}
+			h3 {
+				font-size: 18px;
+			}
+			p {
+				font-size: 18px;
+			}
+		}
+	}
+}

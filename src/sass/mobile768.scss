@@ -1,0 +1,43 @@
+@media (max-width:768px) {
+
+	h1{
+		font-size: 60px;
+	}
+
+	header{
+		.logo__nav{
+			display: none;
+		}
+	}
+
+	.header{
+		&__slog{
+			h1{
+				margin-bottom: 5px;
+
+				img{
+					height: 55px;
+					width: auto;
+					margin-right: 2px;
+				}
+			}
+
+			h3{
+				font-size: 24px;
+			}
+		}
+	}
+
+	.nav{
+		&__main{
+			&__container{
+				.navbar-nav{
+					.nav-link{
+						font-size: 1.8rem;
+						padding: 8px 0;
+					}
+				}
+			}
+		}
+	}
+}

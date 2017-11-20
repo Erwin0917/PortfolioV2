@@ -7,12 +7,14 @@ import ReactDOM from 'react-dom';
 
 /* Tooltips init */
 $(function () {
-    $('[data-toggle="tooltip"]').tooltip()
+	$('[data-toggle="tooltip"]').tooltip()
 })
 
 /* Top Bar Scripts */
-import {AdditionalControls} from "./topBar"
+import {AdditionalControls} from "./topBar";
 
 /* Animations */
-import {navAnimation} from "./animations"
+import { navAnimation, headerTypingInit} from "./animations";
 navAnimation.init();
+headerTypingInit();
+
