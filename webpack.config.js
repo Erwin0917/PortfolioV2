@@ -55,13 +55,18 @@ module.exports = function (env) {
 				},
 
 				{
+					test: /\.html$/,
+					use: ['html-loader']
+				},
+
+				{
 					test: /\.(png|jpg|gif|svg|eot|ttf|woff|woff2)$/,
 					use: [
 						{
-							loader: 'url-loader',
+							loader: 'file-loader',
 							query: {
-								limit: 10000,
-								name: 'img/[name].[ext]'
+								name: '[name].[ext]',
+								outputPath: 'img/'
 							}
 						}
 					]

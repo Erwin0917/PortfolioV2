@@ -1,0 +1,232 @@
+.portfolio {
+	&__wrapper {
+		.sort {
+			&__wrapper {
+				margin-top: 30px;
+			}
+			&__title {
+				width: 100%;
+				font-weight: bold;
+				color: var(--secondaryColor);
+			}
+			&__list {
+				list-style: none;
+				padding-left: 0;
+				border-radius: 6px;
+				@include center;
+			}
+			&__item {
+				font-size: 1.6rem;
+				color: var(--secondaryColor);
+				cursor: pointer;
+			}
+		}
+		.projects {
+			&__wrapper {
+				margin: 30px 0;
+			}
+			&__item {
+				background-color: var(--extraDark);
+				box-shadow: inset 0 0 0 5px white;
+				padding-left: 0;
+				padding-right: 0;
+				&Wrapper {
+					position: relative;
+					overflow: hidden;
+					width: 100%;
+					height: 100%;
+					padding: 5px 5px;
+					background-image: url(../img/logo-big85.png);
+					background-position: center;
+					background-repeat: no-repeat;
+
+					&:hover{
+						.projects__itemDesc{
+							top: 10%;
+						}
+					}
+				}
+				&Title {
+					text-align: center;
+					height: 46px;
+
+					span {
+						position: relative;
+						background-color: rgba(240, 182, 7, 1);
+						padding: 2px 13px;
+						font-size: 1.2rem;
+						z-index: 100;
+						&::before,
+						&::after {
+							content: "";
+							position: absolute;
+							background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' x='0px' y='0px' width='15' height='20' enable-background='new 0 0 15 20' xml:space='preserve'><path fill='#f0b607' d='M11.1,0C8.3,0,6,2.3,6,5.1c0,0,0,0,0,0v9.7C6,17.7,3.7,20,0.9,20h0l-0.5,0h10.7h0.9V0L11.1,0z'/></svg>");
+							background-repeat: no-repeat;
+							background-size: contain;
+							height: 18px;
+							width: 20px;
+							top: 0;
+						}
+						&::before {
+							left: -10px;
+						}
+						&::after {
+							transform: rotateY(180deg);
+							right: -10px;
+						}
+					}
+					h4 {
+						position: relative;
+						background-color: rgb(231, 191, 70);
+						color: var(--secondaryColor);
+						padding: 3px 0;
+						padding-bottom: 6px;
+						font-family: var(--textFont);
+						font-weight: bold;
+						font-size: 1.6rem;
+						box-shadow: 0 -1px 2px rgba(black, 0.2);
+						z-index: 200;
+					}
+				}
+				&Desc {
+					position: absolute;
+					width: calc(100% - 10px);
+					height: 100%;
+					top: calc(100% - 45px);
+					@include trans(0.3s, ease-out);
+
+
+					&>div {
+						flex-basis: 100%;
+					}
+
+					&_design {
+						span {
+							background-color: rgb(240, 42, 7);
+							color: white;
+							&::before,
+							&::after {
+								background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' x='0px' y='0px' width='15' height='20' enable-background='new 0 0 15 20' xml:space='preserve'><path fill='rgb(240, 42, 7)' d='M11.1,0C8.3,0,6,2.3,6,5.1c0,0,0,0,0,0v9.7C6,17.7,3.7,20,0.9,20h0l-0.5,0h10.7h0.9V0L11.1,0z'/></svg>");
+							}
+						}
+						h4 {
+							background-color: rgb(235, 74, 46);
+							color: var(--extraDark);
+						}
+
+						.projects__itemSpec{
+							li{
+								border-color: rgb(240, 42, 7);
+							}
+
+							a{
+								background-color: rgb(240, 42, 7);
+
+								&:hover{
+									background-color: rgb(194, 37, 13);
+								}
+							}
+						}
+					}
+
+					&_web{
+						span {
+							background-color: rgb(8, 117, 206);
+							color: white;
+							&::before,
+							&::after {
+								background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' x='0px' y='0px' width='15' height='20' enable-background='new 0 0 15 20' xml:space='preserve'><path fill='rgb(8, 117, 206)' d='M11.1,0C8.3,0,6,2.3,6,5.1c0,0,0,0,0,0v9.7C6,17.7,3.7,20,0.9,20h0l-0.5,0h10.7h0.9V0L11.1,0z'/></svg>");
+							}
+						}
+
+						h4 {
+							background-color: rgb(43, 139, 207);
+							color: var(--extraDark);
+						}
+
+						.projects__itemSpec {
+							li {
+								border-color: rgb(43, 139, 207);
+							}
+							a {
+								background-color: rgb(43, 139, 207);
+								color: white;
+
+								&:hover {
+									background-color: rgb(26, 118, 180);
+								}
+							}
+						}
+					}
+
+					&_javaScript {
+						span {
+							background-color: rgb(240, 224, 7);
+							color: #010522;
+							&::before,
+							&::after {
+								background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' x='0px' y='0px' width='15' height='20' enable-background='new 0 0 15 20' xml:space='preserve'><path fill='rgb(240, 224, 7)' d='M11.1,0C8.3,0,6,2.3,6,5.1c0,0,0,0,0,0v9.7C6,17.7,3.7,20,0.9,20h0l-0.5,0h10.7h0.9V0L11.1,0z'/></svg>");
+							}
+						}
+						h4 {
+							background-color: rgb(231, 220, 97);
+							;
+							color: var(--extraDark);
+						}
+
+						.projects__itemSpec {
+							li {
+								border-color: rgb(240, 224, 7);
+							}
+							a {
+								background-color: rgb(240, 224, 7);
+								&:hover {
+									background-color: rgb(218, 200, 39);
+								}
+							}
+						}
+					}
+				}
+
+				&Spec {
+					background-color: rgba(white, 0.9);
+					height: 100%;
+					padding: 10px;
+
+					h4{
+						background-color: transparent;
+					}
+
+					ul{
+						padding-left: 5px;
+
+						li{
+							display: inline-block;
+							border: 1px solid rgba(240, 182, 7, 1);
+							border-radius: 4px;
+							padding: 1px 3px;
+							font-weight: bold;
+						}
+					}
+
+					p{
+						padding: 0 5px;
+					}
+
+				}
+
+				&Link{
+					@include center;
+
+					a{
+						font-size: 1.4rem;
+						color: #010522;
+					}
+				}
+			}
+		}
+		.btn__more {
+			@include center;
+		}
+	}
+}

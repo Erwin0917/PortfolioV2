@@ -14,15 +14,15 @@
 		<div class="container-fluid topBar__wrapper">
 			<div class="container">
 				<div class="row justify-content-between">
-					<div class="logo__nav  col-xl-2 col-lg-1 ">
-						<img src="<%=require("./img/logo-nav.png")%>" alt="Logo">
+					<div class="logo__nav  col-1 ">
+						<img src="./img/logo-nav.png" alt="Logo">
 					</div>
 
 
 
 					<nav class="navbar  navbar-expand-lg navbar-dark col  nav__main__container">
-						<button class="navbar-toggler align-middle" type="button" data-toggle="collapse" data-target="#mainNav" aria-controls="navbar" aria-expanded="false"
-						    aria-label="Toggle navigation">
+						<button class="navbar-toggler align-middle" type="button" data-toggle="collapse" data-target="#mainNav" aria-controls="navbar"
+						    aria-expanded="false" aria-label="Toggle navigation">
 							<span class="navbar-toggler-icon"></span>
 						</button>
 						<div class="collapse navbar-collapse" id="mainNav">
@@ -41,13 +41,13 @@
 								<li class="nav-item">
 									<a class="nav-link" href="#">Kontakt</a>
 								</li>
-<span class='nav__links_border'></span>
+								<span class='nav__links_border'></span>
 							</ul>
 						</div>
 					</nav>
 
 
-					<div class="additional__controls align-self-center  col-12 col-sm-8 col-lg-4 d-flex justify-content-sm-end justify-content-between">
+					<div class="additional__controls align-self-center  col-12 col-sm-8 col-lg-3 d-flex justify-content-sm-end justify-content-between">
 						<div class="font__size">
 							<button class="btn__increaseFontSize" type="button">A+</button>
 							<button class="btn__decreaseFontSize" type="button">A-</button>
@@ -63,14 +63,285 @@
 		</div>
 
 		<div class="container header__slog">
-			<h1><img src="<%=require("./img/logo-big.png")%>" alt="Logo">rwin Heba</h1>
+			<h1>
+				<img src="./img/logo-big.png" alt="Logo">rwin Heba</h1>
 			<h3>Front End Developer</h3>
-			<p>Aktualnie: <span class="typing"></span></p>
+			<p>Aktualnie:
+				<span class="typing"></span>
+			</p>
 		</div>
 
 
 
 	</header>
+
+	<main class="container-fluid p-0">
+		<section class="container portfolio__wrapper">
+			<h2 class="header__section">Portfolio</h2>
+			<h3 class="header__sectionDesc">Projekty komercyjne</h3>
+
+			<section class="portfolio projects projects__commercial">
+				<div class="row col-12 sort__wrapper">
+					<p class="text-center sort__title">Segreguj:</p>
+					<div class="btn-group sort__list" data-toggle="buttons">
+						<label class="btn btn-warning active sort__item">
+							<input type="radio" name="options" id="option1" autocomplete="off" checked> Wszystkie
+						</label>
+						<label class="btn btn-warning sort__item">
+							<input type="radio" name="options" id="option2" autocomplete="off"> Design
+						</label>
+						<label class="btn  btn-warning sort__item">
+							<input type="radio" name="options" id="option3" autocomplete="off"> WebSites
+						</label>
+						<label class="btn  btn-warning sort__item">
+							<input type="radio" name="options" id="option4" autocomplete="off"> Wordpress
+						</label>
+						<label class="btn  btn-warning sort__item">
+							<input type="radio" name="options" id="option5" autocomplete="off"> JavaScript
+						</label>
+						<label class="btn  btn-warning sort__item">
+							<input type="radio" name="options" id="option6" autocomplete="off"> React
+						</label>
+					</div>
+				</div>
+				<div class="row projects__wrapper">
+					<div class="firstProject row col-6 col-lg-5 p-0 m-0">
+						<div class="projects__item col-12" style="height: 600px;">
+							<p class="display-2">1</p>
+						</div>
+					</div>
+					<div class="firstLineAnother row col-6 col-lg-7 p-0 m-0">
+						<div class="projects__item col-lg-4" style="height: 300px;">
+							<div class="projects__itemWrapper ">
+								<div class="projects__itemDesc projects__itemDesc_design d-flex flex-wrap">
+									<div class="projects__itemTitle">
+										<span>Design</span>
+										<h4>Okładka płyty</h4>
+									</div>
+									<div class="projects__itemSpec">
+										<h4>Technologie:</h4>
+										<ul>
+											<li>HTML</li>
+											<li>SASS</li>
+											<li>ES6</li>
+										</ul>
+										<h4>Narzędzia:</h4>
+										<ul>
+											<li>Gulp</li>
+										</ul>
+										<h4>Opis:</h4>
+										<p>Przykładowy opis projketu</p>
+
+										<div class="projects__itemLink btn-group" role="group" aria-label="Basic example">
+											<a href="#" class="btn  projects__itemDemo">Live</a>
+											<a href="#" class="btn  projects__itemGit">GitHub</a>
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+						<div class="projects__item col-lg-4" style="height: 300px;">
+							<div class="projects__itemWrapper ">
+								<div class="projects__itemDesc projects__itemDesc_web d-flex flex-wrap">
+									<div class="projects__itemTitle">
+										<span>WebSite</span>
+										<h4>Strona firmy mopylatajo</h4>
+									</div>
+									<div class="projects__itemSpec">
+										<h4>Technologie:</h4>
+										<ul>
+											<li>HTML</li>
+											<li>SASS</li>
+											<li>ES6</li>
+										</ul>
+										<h4>Narzędzia:</h4>
+										<ul>
+											<li>Gulp</li>
+										</ul>
+										<h4>Opis:</h4>
+										<p>Przykładowy opis projketu</p>
+
+										<div class="projects__itemLink btn-group" role="group" aria-label="Basic example">
+											<a href="#" class="btn  projects__itemDemo">Live</a>
+											<a href="#" class="btn  projects__itemGit">GitHub</a>
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+						<div class="projects__item col-lg-4" style="height: 300px;">
+							<div class="projects__itemWrapper ">
+								<div class="projects__itemDesc projects__itemDesc_javaScript d-flex flex-wrap">
+									<div class="projects__itemTitle">
+										<span>JavaScript</span>
+										<h4>Prognoza pogody</h4>
+									</div>
+									<div class="projects__itemSpec">
+										<h4>Technologie:</h4>
+										<ul>
+											<li>HTML</li>
+											<li>SASS</li>
+											<li>ES6</li>
+										</ul>
+										<h4>Narzędzia:</h4>
+										<ul>
+											<li>Gulp</li>
+										</ul>
+										<h4>Opis:</h4>
+										<p>Przykładowy opis projketu</p>
+
+										<div class="projects__itemLink btn-group" role="group" aria-label="Basic example">
+											<a href="#" class="btn  projects__itemDemo">Live</a>
+											<a href="#" class="btn  projects__itemGit">GitHub</a>
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+						<div class="projects__item col-lg-4" style="height: 300px;">
+							<div class="projects__itemWrapper ">
+								<div class="projects__itemDesc projects__itemDesc_web d-flex flex-wrap">
+									<div class="projects__itemTitle">
+										<span>WebSite</span>
+										<h4>Strona firmy mopylatajo</h4>
+									</div>
+									<div class="projects__itemSpec">
+										<h4>Technologie:</h4>
+										<ul>
+											<li>HTML</li>
+											<li>SASS</li>
+											<li>ES6</li>
+										</ul>
+										<h4>Narzędzia:</h4>
+										<ul>
+											<li>Gulp</li>
+										</ul>
+										<h4>Opis:</h4>
+										<p>Przykładowy opis projketu</p>
+
+										<div class="projects__itemLink btn-group" role="group" aria-label="Basic example">
+											<a href="#" class="btn  projects__itemDemo">Live</a>
+											<a href="#" class="btn  projects__itemGit">GitHub</a>
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+						<div class="projects__item col-lg-4" style="height: 300px;">
+							<div class="projects__itemWrapper ">
+								<div class="projects__itemDesc projects__itemDesc_javaScript d-flex flex-wrap">
+									<div class="projects__itemTitle">
+										<span>JavaScript</span>
+										<h4>Prognoza pogody</h4>
+									</div>
+									<div class="projects__itemSpec">
+										<h4>Technologie:</h4>
+										<ul>
+											<li>HTML</li>
+											<li>SASS</li>
+											<li>ES6</li>
+										</ul>
+										<h4>Narzędzia:</h4>
+										<ul>
+											<li>Gulp</li>
+										</ul>
+										<h4>Opis:</h4>
+										<p>Przykładowy opis projketu</p>
+
+										<div class="projects__itemLink btn-group" role="group" aria-label="Basic example">
+											<a href="#" class="btn  projects__itemDemo">Live</a>
+											<a href="#" class="btn  projects__itemGit">GitHub</a>
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+						<div class="projects__item col-lg-4" style="height: 300px;">
+							<div class="projects__itemWrapper ">
+								<div class="projects__itemDesc projects__itemDesc_design d-flex flex-wrap">
+									<div class="projects__itemTitle">
+										<span>Design</span>
+										<h4>Okładka płyty</h4>
+									</div>
+									<div class="projects__itemSpec">
+										<h4>Technologie:</h4>
+										<ul>
+											<li>HTML</li>
+											<li>SASS</li>
+											<li>ES6</li>
+										</ul>
+										<h4>Narzędzia:</h4>
+										<ul>
+											<li>Gulp</li>
+										</ul>
+										<h4>Opis:</h4>
+										<p>Przykładowy opis projketu</p>
+
+										<div class="projects__itemLink btn-group" role="group" aria-label="Basic example">
+											<a href="#" class="btn  projects__itemDemo">Live</a>
+											<a href="#" class="btn  projects__itemGit">GitHub</a>
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+					</div>
+					<h4>Inne projekty: </h4>
+					<div class="anotherProjects  row col-12 p-0 m-0">
+						<div class="projects__item col-md-3" style="height: 300px;">
+							<p class="display-2">8</p>
+						</div>
+						<div class="projects__item col-md-3" style="height: 300px;">
+							<p class="display-2">9</p>
+						</div>
+						<div class="projects__item col-md-3" style="height: 300px;">
+							<p class="display-2">10</p>
+						</div>
+						<div class="projects__item col-md-3" style="height: 300px;">
+							<p class="display-2">11</p>
+						</div>
+						<div class="projects__item col-md-3" style="height: 300px;">
+							<p class="display-2">12</p>
+						</div>
+						<div class="projects__item col-md-3" style="height: 300px;">
+							<p class="display-2">13</p>
+						</div>
+						<div class="projects__item col-md-3" style="height: 300px;">
+							<p class="display-2">14</p>
+						</div>
+						<div class="projects__item col-md-3" style="height: 300px;">
+							<p class="display-2">15</p>
+						</div>
+					</div>
+
+				</div>
+
+				<button type="button" class="btn btn__more">Więcej...</button>
+
+
+
+			</section>
+
+			<h3 class="header__sectionDesc">Projekty prywatne</h3>
+			<section class="portfolio projects__wrapper projects__priv">
+
+			</section>
+
+
+		</section>
+
+
+
+	</main>
+
+
+
 
 
 

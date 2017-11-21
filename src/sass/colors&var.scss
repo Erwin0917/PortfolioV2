@@ -4,7 +4,7 @@
 	--primaryColor: #f0b607;
 	--secondaryColor: #091052;
 	--extraLight: white;
-	--extraDark: black;
+	--extraDark: #010522;
 	--disableColor:rgb(173, 173, 173);
 }
 
@@ -32,10 +32,4 @@
 		transition: $var $time $timing;
 	}
 
-}
-
-
-/* General class */
-.container-fluid{
-	max-width: 1920px;
 }
